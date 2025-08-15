@@ -4,15 +4,20 @@
   "description": "Một ứng dụng web giúp người dùng quản lý thời gian và theo dõi hiệu suất làm việc từ xa.",
   "main": "index.js",
   "scripts": {
+    // Script to start the server
     "start": "node server.js",
+    // Script to start the client application
     "client": "npm start --prefix client",
+    // Script to run both server and client concurrently during development
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
+    // Core dependencies for the application
     "express": "^4.17.1",
     "mongoose": "^5.11.15"
   },
   "devDependencies": {
+    // Development dependencies for running multiple scripts
     "concurrently": "^5.3.0"
   },
   "author": "Your Name",
