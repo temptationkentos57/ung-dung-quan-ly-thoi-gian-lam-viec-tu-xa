@@ -9,7 +9,7 @@
     // Script to start the client application
     "client": "npm start --prefix client",
     // Script to run both server and client concurrently during development
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently "npm run start" "npm run client""
   },
   "dependencies": {
     // Core dependencies for the application
