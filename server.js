@@ -9,6 +9,10 @@ app.use(express.json());
 mongoose.connect('mongodb://localhost:27017/quanlythoi-gian', {
   useNewUrlParser: true,
   useUnifiedTopology: true
+}).then(() => {
+  console.log('Kết nối đến MongoDB thành công');
+}).catch(err => {
+  console.error('Lỗi kết nối đến MongoDB:', err);
 });
 
 app.get('/', (req, res) => {
